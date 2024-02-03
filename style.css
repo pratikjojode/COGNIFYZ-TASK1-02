@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+
+}
+body{
+
+    background-color: gray;
+}
+.form-content{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   background-color: green;
+   width: 40%;
+   margin:  70px auto;
+   border-radius: 10px;
+   text-align: center;
+}
+.form-content input{
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    transition: border-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.form-content input::placeholder{
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+.radio-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.form-content input:focus {
+    border-color: #333; 
+}
+#radio{
+    width: 20px;
+}
+p{
+    font-size: 20px;
+    font-weight: 600;
+}
+#btn{
+    margin: 20px auto;
+    width: 40%;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    background-color: blue;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#btn:hover{
+    background-color: rgb(8, 183, 242);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); 
+}
+@media(max-width:580px){
+    .form-content{
+        text-align: center;
+        width: 90%;
+        margin: 70px auto;
+        padding: 20px;
+    }
+    .form-content input{
+        width: 100%;
+    }
+}
